@@ -24,5 +24,5 @@ urlpatterns = [
     path('Specific/',include('Specific.urls')),
 
     path('Gen/',Gen,name='Gen')
-     path('ram/',ram,name='ram'),
+    path('ram/',ram,name='ram'),
 ]
