@@ -17,11 +17,12 @@ Including another URLconf
 from django.contrib import admin 
 from django.urls import path,include
 import Specific
-from Generic.views import Generic
+from Generic.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('Specific/',include('Specific.urls')),
 
     path('Gen/',Gen,name='Gen')
+     path('ram/',ram,name='ram'),
 ]
